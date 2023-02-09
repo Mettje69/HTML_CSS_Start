@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пcевдоклассы last-child и first-child</title>
+    <style>
+        /* первый параграф в определенном контейнере */ 
+        p:first-of-type {
+            background-color: green;
+        }
+        
+        /* первый дочерний элемент любого div*/ 
+        div :first-child {
+            background-color: blue;
+        }
+        
+        /* последний дочерний элемент любого div*/ 
+        div :last-child {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Заголовок </h1>
+    <p>Первый паparpaф</p> <!--p:first-of-type-->
+    <р>Второй параграф. </p>
+    <р>Третий параграф.</p>
+    <р>Четвертый параграф.</p>
+    <div>
+        <span>Пеpвая строка</span> <!--div :first-child--> 
+        <br />
+        <span>Вторая строка</span>
+        <br />
+        <span>Третья строка</span> 
+        <br />
+        <span>Чeтвeртая строка</span> <!--div :last-child-->
+    </div>
+</body>
+</html>
